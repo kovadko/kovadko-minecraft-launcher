@@ -1,0 +1,13 @@
+{
+  "minecraft_to_launch": {
+    "version": "1.21",
+    "modification": null
+  },
+  "run_after_install": true,
+  "show_in_vanilla_versions": [
+    "releases",
+    "snapshots",
+    "old_beta",
+    "old_alpha"
+  ]
+}

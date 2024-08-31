@@ -1,0 +1,21 @@
+{% extends "index.html" %}
+
+{% block title %}KovadkoLauncher{% endblock %}
+
+{% block main %}
+    <main>
+        <form method="post" id="main-btn-form"><button type="submit" id="main-btn"></button> </form>
+        <button id="version-to-launch">{{ version_to_launch }}</button>
+
+        <div id="modifications-list">
+            <button class="modification" value="vanilla">Vanilla</button>
+            <button class="modification" value="fabric">Fabric</button> 
+            <button class="modification" value="quilt">Quilt</button>
+            <button class="modification" value="forge">Forge</button>
+        </div>
+
+        <button id="backward-btn" class="version-list-btns"><img src="static/images/chevron_right.svg" style="transform: scaleX(-1);"></button>
+        <form method="POST" id="versions-list"></form>
+        <button id="forward-btn" class="version-list-btns"><img src="static/images/chevron_right.svg"></button>
+    </main>
+{% endblock %}

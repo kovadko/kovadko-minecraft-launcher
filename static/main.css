@@ -1,0 +1,96 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background-color: #00000000;
+    font-size: 25px;
+    color: white;
+}
+
+html {
+    overflow: hidden;
+    background-color: #0a0a0a;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 16%;
+}
+
+#main-btn {
+    height: 80px;
+    width: 100%;
+    font-size: 32px;
+    letter-spacing: 1px;
+    border: 3px solid #212121;
+    border-radius: 10px;
+}
+
+:hover {
+    transition: all 0.4s ease-in-out;
+}
+
+#main-btn:hover {
+    border-color: rgb(145, 97, 235);
+}
+
+#version-to-launch {
+    position: absolute;
+    top: 36px;
+    left: 50%;
+    transform: translate(-50%, 30px);
+    padding-inline: 10px;
+    font-size: 21px;
+    color: #505050;
+    letter-spacing: 1px;
+    background-color: #0a0a0a;
+    border-radius: 7px;
+}
+
+#version-to-launch:hover {
+    background-color: rgb(145, 97, 235);
+}
+
+#modifications-list {
+    display: none;
+    justify-content: space-between;
+}
+
+.modification:hover {
+    color: rgb(145, 97, 235);
+}
+
+#versions-list {
+    overflow: hidden;
+    height: 80px;
+    white-space: nowrap;
+    gap: 10px;
+}
+
+.versions-list-btn {
+    color: #505050;
+}
+
+#versions-list {
+    display: none;
+}
+
+.version-list-btns {
+    display: none;
+}
+
+.version-list-btns:hover {
+    filter: opacity(50%);
+}
+
+.versions-list-btn:hover {
+    color: rgb(145, 97, 235);
+}

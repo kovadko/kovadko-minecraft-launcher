@@ -1,0 +1,79 @@
+{
+  "optional": {
+    "executablePath": {
+      "type": "string",
+      "default": "java",
+      "description": "The path to the java executable"
+    },
+    "defaultExecutablePath": {
+      "type": "string",
+      "default": "java",
+      "description": "The path to the java executable if the version.json has none"
+    },
+    "jvmArguments": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "The jvmArguments"
+    },
+    "demo": {
+      "type": "boolean",
+      "default": false,
+      "description": "Run Minecraft in demo mode"
+    },
+    "customResolution": {
+      "type": "boolean",
+      "default": false,
+      "description": "Enable custom resolution"
+    },
+    "resolutionWidth": {
+      "type": "string",
+      "description": "The resolution width"
+    },
+    "resolutionHeight": {
+      "type": "string",
+      "description": "The resolution heigth"
+    },
+    "nativesDirectory": {
+      "type": "string",
+      "description": "The natives directory"
+    },
+    "enableLoggingConfig": {
+      "type": "boolean",
+      "default": false,
+      "description": "Enable use of the log4j configuration file"
+    },
+    "disableMultiplayer": {
+      "type": "boolean",
+      "default": false,
+      "description": "Disables the multiplayer"
+    },
+    "disableChat": {
+      "type": "boolean",
+      "default": false,
+      "description": "Disables the chat"
+    },
+    "quickPlayPath": {
+      "type": "string",
+      "description": "The Quick Play Path",
+      "default": null
+    },
+    "quickPlaySingleplayer": {
+      "type": "string",
+      "description": "The Quick Play Singleplayer",
+      "default": null
+    },
+    "quickPlayMultiplayer": {
+      "type": "string",
+      "description": "The Quick Play Multiplayer",
+      "default": null
+    },
+    "quickPlayRealms": {
+      "type": "string",
+      "description": "The Quick Play Realms",
+      "default": null
+    }
+  },
+  "required": ["username", "uuid", "token", "gameDirectory"]
+}
